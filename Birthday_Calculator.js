@@ -5,7 +5,8 @@ var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 function dayCalculator() {
   birthDate = prompt("Please enter your birth date in this format dd/mm/yyyy");
   confirm("Please confirm that you were born on " + birthDate);
-  // Figure out the century
-  CC = birthDate.charAt(0) + birthDate.charAt(1);
-  console.log(CC);
+  CC = parseInt(birthDate.charAt(6) + birthDate.charAt(7)); // Figure out the century digits
+  YY = parseInt(birthDate.charAt(8) + birthDate.charAt(9));//Figure out the Year digits
+  MM = parseInt(birthDate.charAt(3) + birthDate.charAt(4));//Figure out the Month
+  console.log();
 }
