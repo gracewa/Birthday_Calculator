@@ -60,13 +60,12 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #f0faf5;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
-
 
 hr {
   box-sizing: content-box;
@@ -547,7 +546,7 @@ pre code {
 }
 
 .container {
-  width: 50%;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -1997,17 +1996,6 @@ textarea.form-control {
 
 .form-group {
   margin-bottom: 1rem;
-
-}
-
-#userBirthday {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-#userGender {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .form-text {
@@ -5098,7 +5086,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #007bff;
+  background-color: #e9ecef;
   border-radius: 0.3rem;
 }
 
