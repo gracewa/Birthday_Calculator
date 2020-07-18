@@ -12,9 +12,14 @@ function dayCalculator() {
   var MM = parseInt(dateComponents[1]);
   var YY = parseInt(dateComponents[0]);
   var newDate = new Date(YY, MM-1, DD); // Deduct 1 because computers count from 0 so January will be 0
-  weekDay = weekDays[newDate.getDay()];
-  alert(weekDay);
+  weekDayIndex = newDate.getDay();
   var gender = document.getElementById("userGender").value;
-  alert(gender);
+  if (gender === "Female") {
+    var akanName = femaleNames[weekDayIndex];
+    alert("Your Akan Name is " + akanName);
+  } else {
+    var akanName = maleNames[weekDayIndex];
+    alert("Your Akan Name is " + akanName);
+  }
 
 }
