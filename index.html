@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="Birthday_Calculator.js"></script>
     <title>What is Your Ghanian Day Name?</title>
   </head>
   <body>
@@ -13,20 +14,25 @@
       </h1>
       </div>
 
-      <form name="birthday_form" action="">
+      <form name="birthday_form">
         People from Ghana name their children after the day of the week when they were born. Enter your birthday & gender below
         and click submit to find out your Akan name.
-        <div class="form-group" id="userbirthday">
+        <br>
+        <br>
+        <div class="form-group">
           <label for="date">Enter your birthday</label>
-          <input type="date" class="form-control">
+          <input type="date" class="form-control" id="userBirthday">
         </div>
         <label for="gender">Gender</label>
         <select class="form-control" id="usergender">
+          <option>Select your Gender</option>
           <option>Male</option>
           <option>Female</option>
         </select>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary" onclick="dayCalculator()">Submit</button>
       </form>
-
+    </div>
   </body>
 </html>
