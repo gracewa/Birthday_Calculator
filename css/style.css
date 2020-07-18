@@ -1,0 +1,22 @@
+#userBirthday {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#userGender {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+body {
+  background-color: #f0faf5;
+}
+
+.container {
+  width: 50%;
+}
+
+.jumbotron {
+
+  background-color: #007bff;
+}
