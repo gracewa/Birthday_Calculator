@@ -14,4 +14,7 @@ function dayCalculator() {
   var newDate = new Date(YY, MM-1, DD); // Deduct 1 because computers count from 0 so January will be 0
   weekDay = weekDays[newDate.getDay()];
   alert(weekDay);
+  var gender = document.getElementById("userGender").value;
+  alert(gender);
+
 }
