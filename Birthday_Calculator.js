@@ -11,9 +11,9 @@ function dayCalculator() {
   var DD = parseInt(dateComponents[0]);
   var MM = parseInt(dateComponents[1]);
   var YY = parseInt(dateComponents[2]);
-  if (DD<=0 || DD>31) {
+  if (DD<=0 || DD>31 || isNaN(DD)) {
     alert("Invalid Date. Please re-enter your birthday in the following format: dd/mm/yyyy");
-  } else if (MM<=0 || MM>12) {
+  } else if (MM<=0 || MM>12 || isNaN(MM)) {
     alert("Invalid Date. Please re-enter your birthday in the following format: dd/mm/yyyy");
   } else {
     var newDate = new Date(YY, MM-1, DD); // Deduct 1 because computers count from 0 so January will be 0
